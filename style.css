@@ -1,0 +1,110 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  background-size: cover;
+  background-color: #242424;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.debit-card {
+  width: 630px;
+  height: 395px;
+  padding: 50px 50px 40px;
+  background: linear-gradient(
+    111.46deg,
+    rgba(180, 180, 180, 0.5) 0%,
+    rgba(153, 153, 153, 0.15) 100%
+  );
+  border: 2px solid rgba(224, 224, 224, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.debit-card .bank {
+  width: 235px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.debit-card .visa {
+  width: 135px;
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+}
+
+.debit-card .chip {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.debit-card h2 {
+  color: #e0e0e0;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  width: 60%;
+}
+
+.info .title {
+  display: inline-block;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.info .detail {
+  color: #e0e0e0;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.info .expire {
+  text-align: auto;
+}
+.info .valid {
+  text-align: auto;
+}
